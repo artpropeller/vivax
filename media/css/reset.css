@@ -51,3 +51,15 @@ table {
 .clr{
     clear: both;
 }
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+.ofl {
+    overflow: auto;
+}
