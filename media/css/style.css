@@ -1,0 +1,41 @@
+body {
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    min-width: 1000px;
+    background: #a7d9fd url("../i/molekula.jpg") repeat 50% 0 fixed ;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+#bg2 {
+    background: url("../i/bg2.png") repeat 100% 0 fixed ;
+}
+
+#buble1 {
+    background: url("../i/buble1.png") repeat 0 0 fixed ;
+}
+
+#top_bg {
+    background: url("../i/top_bg.png") no-repeat left top;
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 723px;
+    height: 474px;
+
+}
+
+#container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 755px;
+    margin: 0 auto;
+    height: 10000px;
+}
+
+#skrollr-body {
+    padding: 100px 0;
+}
