@@ -6,8 +6,10 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet'
           type='text/css'>
     <link type="text/css" rel="stylesheet" media="all" href="media/css/reset.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="media/css/datepicker.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="media/css/style.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="media/js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="media/js/main.js"></script>
     <script type="text/javascript" src="media/js/cufon-yui.js"></script>
     <script type="text/javascript" src="media/js/myriad-pro.cufonfonts.js"></script>
@@ -15,7 +17,7 @@
     <script type="text/javascript">
         Cufon.replace('.regular, h1', { fontFamily:'MyriadRegular', hover:true });
         Cufon.replace('.bold_italic', { fontFamily:'MyriadBoldItalic', hover:true });
-        Cufon.replace('.bold, h2, h4,#back, .menu a', { fontFamily:'MyriadBold', hover:true });
+        Cufon.replace('.bold, h2, h4,#back, .menu a, .switch', { fontFamily:'MyriadBold', hover:true });
         Cufon.replace('.italic', { fontFamily:'MyriadItalic', hover:true });
     </script>
     <!--[if lt IE 9]>
@@ -36,6 +38,15 @@
 
             <div id="left-bar">
                 <a class="logo" href="/"><img src="media/i/logo.png" alt=""></a>
+
+                <ul class="menu">
+                    <li><a href="#">Ценности</a></li>
+                    <li><a href="#">Научные руководители</a></li>
+                    <li class="active"><a href="#">Новости</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Фотоархив</a></li>
+                    <li class="last"><a href="#">Видеоархив</a></li>
+                </ul>
 
                 <div class="banner">
                     <div class="top"></div>
@@ -69,108 +80,120 @@
                 <div class="clr"></div>
 
                 <ul id="menu">
-                    <li class="first"><a href="#">О компании</a></li>
+                    <li class="first active"><a href="#">О компании</a></li>
                     <li><a href="#">Продукция</a></li>
                     <li><a href="#">Специалистам</a></li>
                     <li><a href="#">Вопрос-ответ</a></li>
                     <li><a href="#">Где купить</a></li>
-                    <li class="last active"><a href="#">Контакты</a></li>
+                    <li class="last"><a href="#">Контакты</a></li>
                 </ul>
+                <div class="data_picker">
+                    <div class="form_date">
+                        <div data-date="12-02-2012" data-date-format="dd-mm-yyyy" class="items well1 fll">
+                            <label for="dp2">Показать новости с</label>
+                            <input id="dp2" type="text" value="01.12.2007">
+
+
+                        </div>
+                        <div class="items well2 fll">
+                            <label for="dp3">по</label>
+                            <input id="dp3" type="text" value="05.11.2010">
+                            <script>
+                                $(function () {
+                                    $('#dp3, #dp2').datepicker({weekStart:1, format:'dd.mm.yy'}).on('changeDate', function (ev) {
+                                        Cufon.replace('.switch', { fontFamily:'MyriadBold', hover:true });
+                                    });
+                                    $('#dp3, #dp2').datepicker('hide');
+
+                                });
+                            </script>
+                        </div>
+                        <div class="clr"></div>
+
+                    </div>
+
+                </div>
+
 
                 <div id="content">
-                    <h1>Контакты</h1>
+                    <h1>Новости</h1>
 
 
-                    <div class="tabs">
-                        <div class="inset">
-                            <div class="item first">
-                                <span></span>
-                                <h4>Центральный офис</h4>
-                                <i></i>
-                            </div>
-                            <div class="item second active">
-                                <span></span>
-                                <h4>Представительства в регионах</h4>
-                                <i></i>
-                            </div>
-                        </div>
-                        <div class="tab-area">
-                            <div class="contact">
-                                <div class="info">
+                    <div class="news">
+                        <div class="new">
+                            <img src="media/temp/img_content.jpg" width="216" height="160" class="fll" alt="">
 
-                                    <div class="breadcrumbs">
-                                        <ul>
-                                            <li><a href="#"><span>Россия</span></a>
-                                                <ul>
-                                                    <li><a href="#">Украина</a></li>
-                                                    <li><a href="#">Белоруссия</a></li>
-                                                    <li><a href="#">Грузия</a></li>
-                                                    <li><a href="#">Казахстан</a></li>
-                                                    <li><a href="#">Япония</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>/</li>
-                                            <li><a href="#"><span>Владивосток</span></a>
-                                                <ul>
-                                                    <li><a href="#">Москва</a></li>
-                                                    <li><a href="#">Владивосток</a></li>
-                                                    <li><a href="#">Ульяновск</a></li>
-                                                    <li><a href="#">Смоленск</a></li>
-                                                    <li><a href="#">Саратов</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <div class="clr"></div>
-                                    </div>
+                            <div class="info">
+                                <a class="name" href="#">VAVAX бьет рекорды: на кайте через Беренгов пролив</a>
 
+                                <p>1 июля российские спортсмены Евгений Новожеев и Константин Аксенов пересекли
+                                    Берингов пролив на
+                                    кайтбордах от
+                                    села
+                                    Уэлен (Чукотка, Россия) до населенного пункта Уэльс (Аляска, США) протяженностью
+                                    97 км за 7 часов, 56
+                                    минут.</p>
 
-                                    <h5>ООО «Академия Научной Красоты Владивосток»</h5>
-                                    ул. Металлистов, д. 5<br>
-                                    Teл.: <span>+7 (495) 781-99-11</span><br>
-                                    Факс: <span>+7 (495) 781-66-22</span><br>
-                                    E-mail: <span>info@vivax.ru</span>
+                                <div class="date_time">
+                                    <span>2.12.2011</span><span>19:04</span>
                                 </div>
-                                <div class="map"><img src="media/temp/map.jpg" alt=""></div>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                        <div class="new">
+                            <img src="media/temp/img_content.jpg" width="216" height="160" class="fll" alt="">
+
+                            <div class="info">
+                                <a class="name" href="#">VAVAX бьет рекорды: на кайте через Беренгов пролив</a>
+
+                                <p>1 июля российские спортсмены Евгений Новожеев и Константин Аксенов пересекли
+                                    Берингов пролив на
+                                    кайтбордах от
+                                    села
+                                    Уэлен (Чукотка, Россия) до населенного пункта Уэльс (Аляска, США) протяженностью
+                                    97 км за 7 часов, 56
+                                    минут.</p>
+
+                                <div class="date_time">
+                                    <span>2.12.2011</span><span>19:04</span>
+                                </div>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                        <div class="new">
+                            <img src="media/temp/img_content.jpg" width="216" height="160" class="fll" alt="">
+
+                            <div class="info">
+                                <a class="name" href="#">VAVAX бьет рекорды: на кайте через Беренгов пролив</a>
+
+                                <p>1 июля российские спортсмены Евгений Новожеев и Константин Аксенов пересекли
+                                    Берингов пролив на
+                                    кайтбордах от
+                                    села
+                                    Уэлен (Чукотка, Россия) до населенного пункта Уэльс (Аляска, США) протяженностью
+                                    97 км за 7 часов, 56
+                                    минут.</p>
+
+                                <div class="date_time">
+                                    <span>2.12.2011</span><span>19:04</span>
+                                </div>
                             </div>
                             <div class="clr"></div>
                         </div>
                     </div>
 
 
-                    <div class="comments feedback">
+                    <div class="padder bord">
+                        <ul class="pager">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">86</a></li>
+                            <li><a href="#">87</a></li>
 
-                        <div class="form-comment">
-                            <div class="inner">
-                                <div class="head">
-                                    <div class="social-auth">
-                                        <div class="label">Авторизоваться через:</div>
-                                        <a href="#" class="twitter"></a>
-                                        <a href="#" class="facebook"></a>
-                                        <a href="#" class="vkontakte"></a>
-                                    </div>
-                                    <h4>Обратная связь</h4>
-                                </div>
-                                <div class="form">
-                                    <div class="avatar">
-                                        <img src="media/i/noava.jpg" alt="">
-                                    </div>
-                                    <div class="items">
-                                        <input type="text" placeholder="Имя" class="first">
-                                        <input type="text" placeholder="Контактные данные">
-                                        <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
-
-                                        <div class="captha">
-                                            <input type="text" placeholder="Введите символы слева" value="captio">
-                                            <img src="media/temp/captha.jpg" alt="">
-                                        </div>
-                                        <div class="clr"></div>
-                                        <a class="send" href="#">Опубликовать</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        </ul>
                     </div>
 
 

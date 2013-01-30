@@ -1,0 +1,62 @@
+#left-bar {
+    padding-right: 10px;
+    width: 225px;
+}
+
+body {
+    z-index: 0;
+}
+
+#container {
+    z-index: 1;
+
+}
+
+#top-bg {
+    z-index: 5;
+}
+
+#menu {
+    z-index: 3;
+}
+
+#content {
+    z-index: 0;
+}
+
+#right {
+    z-index: 1;
+
+}
+
+#top_contacts .phone {
+    text-align: right;
+}
+
+.popup {
+    z-index: 3;
+    margin-left: -150px;
+    zoom: 1;
+    top: 20px;
+}
+
+.data_picker {
+    position: absolute;
+    z-index: 1000;
+    left: 15px;
+    top: 165px;
+    margin-bottom: 0;
+    width: 500px;
+    left:50%;
+    margin-left: -250px;
+}
+
+
+.pager li{
+    display: inline;
+
+}
+
+.padder{
+    padding: 15px 0 30px;
+}

@@ -11,20 +11,25 @@
     <script type="text/javascript" src="media/js/main.js"></script>
     <script type="text/javascript" src="media/js/cufon-yui.js"></script>
     <script type="text/javascript" src="media/js/myriad-pro.cufonfonts.js"></script>
-    <meta name = "viewport" content = "width = 1040">
+    <meta name="viewport" content="width = 1040">
     <script type="text/javascript">
         Cufon.replace('.regular, h1', { fontFamily:'MyriadRegular', hover:true });
         Cufon.replace('.bold_italic', { fontFamily:'MyriadBoldItalic', hover:true });
         Cufon.replace('.bold, h2, h4,#back, .menu a', { fontFamily:'MyriadBold', hover:true });
         Cufon.replace('.italic', { fontFamily:'MyriadItalic', hover:true });
     </script>
-
+    <!--[if lt IE 9]>
+        <link type="text/css" rel="stylesheet" media="all" href="media/css/ie.css"/>
+        <![endif]-->
+    <!--[if IE 7]>
+     <link type="text/css" rel="stylesheet" media="all" href="media/css/ie7.css"/>
+     <![endif]-->
 </head>
 <body data-0="background-position:0px 0px;" data-100000="background-position:0px -3000px;">
 <div id="skrollr-body">
 <div id="bg2" data-0="background-position:100% 350px;" data-100000="background-position:100% -30000px;">
 <div id="buble1" data-0="background-position:0px 0px;" data-100000="background-position:0px -200000px;">
-<div id="top_bg"></div>
+
 
 <div id="container">
 
@@ -54,6 +59,7 @@
 </div>
 
 <div id="right">
+<div id="top_bg"></div>
 <div id="top_circles">
     <a class="circle item1" href="#"></a>
     <a class="circle item2" href="#"></a>
@@ -404,39 +410,40 @@
 
 <div class="padder bord">
     <h3>Списки</h3>
+
     <div class="col-50">
-    <ul class="list">
-        <li><a href="#">Ненумерованный список с буллитами</a>
-            <ul>
-                <li><a href="#">Пример вложенности</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Ещё несколько пунктов</a></li>
-        <li><a href="#">Чтобы показать как выглядит список с различным текстом, вот таким длинным</a></li>
-        <li><a href="#">И даже таким коротким</a>
-            <ul>
-                <li><a href="#">Пример вложенности</a></li>
-            </ul>
-        </li>
-        <li><a href="#">И ещё чего-нибудь различного</a></li>
-    </ul>
+        <ul class="list">
+            <li><a href="#">Ненумерованный список с буллитами</a>
+                <ul>
+                    <li><a href="#">Пример вложенности</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ещё несколько пунктов</a></li>
+            <li><a href="#">Чтобы показать как выглядит список с различным текстом, вот таким длинным</a></li>
+            <li><a href="#">И даже таким коротким</a>
+                <ul>
+                    <li><a href="#">Пример вложенности</a></li>
+                </ul>
+            </li>
+            <li><a href="#">И ещё чего-нибудь различного</a></li>
+        </ul>
     </div>
     <div class="col-50">
-    <ol>
-        <li><a href="#">Ненумерованный список с буллитами</a>
-            <ol>
-                <li><a href="#">Пример вложенности</a></li>
-            </ol>
-        </li>
-        <li><a href="#">Ещё несколько пунктов</a></li>
-        <li><a href="#">Чтобы показать как выглядит список с различным текстом, вот таким длинным</a></li>
-        <li><a href="#">И даже таким коротким</a>
-            <ol>
-                <li><a href="#">Пример вложенности</a></li>
-            </ol>
-        </li>
-        <li><a href="#">И ещё чего-нибудь различного</a></li>
-    </ol>
+        <ol>
+            <li><a href="#">Ненумерованный список с буллитами</a>
+                <ol>
+                    <li><a href="#">Пример вложенности</a></li>
+                </ol>
+            </li>
+            <li><a href="#">Ещё несколько пунктов</a></li>
+            <li><a href="#">Чтобы показать как выглядит список с различным текстом, вот таким длинным</a></li>
+            <li><a href="#">И даже таким коротким</a>
+                <ol>
+                    <li><a href="#">Пример вложенности</a></li>
+                </ol>
+            </li>
+            <li><a href="#">И ещё чего-нибудь различного</a></li>
+        </ol>
     </div>
     <div class="clr"></div>
 </div>
@@ -444,6 +451,7 @@
 <div class="padder">
     <h3>Иллюстрации</h3>
     <img src="media/temp/bigimage.jpg" alt="">
+
     <p>Иллюстрация на всю ширину поля набора</p>
 </div>
 
@@ -467,29 +475,30 @@
 </div>
 
 </div>
+<div class="clr"></div>
 
 </div>
 
 </div>
 </div>
 <div id="footer">
-<div class="container">
-    Корпорация «Академия Научной Красоты»<br>
-    129090, Москва, 2-й Троицкий, дом 3<br>
-    Teл.: +7 (495) 781-99-11<br>
-    E-mail: <a href="#">info@vivax.ru</a>
-    <div class="social">
-        <a class="tw" href="#"></a>
-        <a class="fb" href="#"></a>
-        <a class="vk" href="#"></a>
-        <a class="ok" href="#"></a>
-        <a class="gp" href="#"></a>
-        <a class="yt" href="#"></a>
-        <a class="ru" href="#"></a>
-    </div>
-    <a class="itech" href="#"></a>
-</div>
+    <div class="container">
+        Корпорация «Академия Научной Красоты»<br>
+        129090, Москва, 2-й Троицкий, дом 3<br>
+        Teл.: +7 (495) 781-99-11<br>
+        E-mail: <a href="#">info@vivax.ru</a>
 
+        <div class="social">
+            <a class="tw" href="#"></a>
+            <a class="fb" href="#"></a>
+            <a class="vk" href="#"></a>
+            <a class="ok" href="#"></a>
+            <a class="gp" href="#"></a>
+            <a class="yt" href="#"></a>
+            <a class="ru" href="#"></a>
+        </div>
+        <a class="itech" href="#"></a>
+    </div>
 
 
 </div>

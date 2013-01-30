@@ -1,0 +1,65 @@
+#content{
+    background:#fff;
+
+}
+
+input[type=text]{
+    line-height: 32px;
+}
+
+.menu{
+    background:none;
+        -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+        zoom: 1;
+
+}
+
+
+
+#left-bar .banner .inner{
+    background:none;
+           -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+           filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+           zoom: 1;
+
+}
+#left-bar .menu li.active{
+    background:none;
+           -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2F5FBFF,endColorstr=#B2F5FBFF);
+           filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2F5FBFF,endColorstr=#B2F5FBFF);
+           zoom: 1;
+
+}
+
+.breadcrumbs li ul{
+    border: 1px solid #ccc;
+}
+
+
+.datepicker{
+    border: 1px solid #ccc;
+}
+
+.datepicker tr{
+    border: 0;
+}
+.datepicker .dow{
+    border:0;
+}
+
+
+.datepicker td{
+    border: 0;
+    text-align: center;
+    display: block;
+}
+
+.pager li.active{
+     border: 1px solid #ccc;
+}
+
+
+
+
+

@@ -1,10 +1,11 @@
 body {
-    font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     color: #666666;
     font-size: 13px;
     line-height: 22px;
     min-width: 1024px;
-    background: #a7d9fd url("../i/molekula.jpg") repeat 50% 0 fixed ;
+    background: #a7d9fd url("../i/molekula.jpg") repeat 50% 0 fixed;
+
 }
 
 h1 {
@@ -15,6 +16,7 @@ h1 {
     padding-top: 3px;
     margin-bottom: 15px;
     border-bottom: 1px solid #e6e6e6;
+    text-align: left;
 }
 
 h2 {
@@ -31,7 +33,7 @@ h3 {
     margin-bottom: 25px;
 }
 
-h4  {
+h4 {
     color: #434343;
     font-size: 14px;
     line-height: 14px;
@@ -58,22 +60,22 @@ a:hover {
 }
 
 /*a:visited {*/
-    /*color: #0a5c92;*/
+/*color: #0a5c92;*/
 /*}*/
 
 #bg2 {
-    background: url("../i/bg2.png") repeat-x 100% 0 fixed ;
+    background: url("../i/bg2.png") repeat-x 100% 0 fixed;
 }
 
 #buble1 {
-    background: url("../i/buble1.png") repeat 0 0 fixed ;
+    background: url("../i/buble1.png") repeat 0 0 fixed;
 }
 
 #top_bg {
     background: url("../i/top_bg.png") no-repeat left top;
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     width: 723px;
     height: 474px;
     z-index: 1;
@@ -83,7 +85,8 @@ a:hover {
 #container {
     width: 1000px;
     margin: 0 auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
+
 }
 
 #content {
@@ -108,6 +111,7 @@ a:hover {
 
 #right {
     float: right;
+    /*position: relative;*/
 }
 
 #left-bar {
@@ -191,7 +195,7 @@ a:hover {
     height: 64px;
     position: absolute;
     z-index: 10;
-    top:-4px;
+    top: -4px;
     right: -4px;
 }
 
@@ -243,7 +247,7 @@ a:hover {
 
 #top_contacts .language a {
     display: block;
-    border:1px solid transparent;
+    border: 1px solid transparent;
     padding: 3px 5px;
     margin-left: 5px;
     float: left;
@@ -254,7 +258,7 @@ a:hover {
 }
 
 #top_contacts .language img {
-    box-shadow: 0 0 3px rgba(0,0,0,0.7);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     display: block;
 }
 
@@ -265,7 +269,7 @@ a:hover {
     position: relative;
     z-index: 100;
     margin-bottom: 20px;
-    box-shadow: 0 0 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
     margin-right: 2px;
     overflow: hidden;
     text-transform: uppercase;
@@ -307,11 +311,11 @@ a:hover {
     background: url("../i/menu_hover.jpg") repeat-x top;
 }
 
-#menu li:hover a{
+#menu li:hover a {
     background: url("../i/menu_hover_div.jpg") no-repeat right;
 }
 
-#menu li.last a{
+#menu li.last a {
     background: none;
 
 }
@@ -320,15 +324,15 @@ a:hover {
     background: url("../i/menu_active.jpg") repeat-x top;
 }
 
-#menu li.active a{
+#menu li.active a {
     background: url("../i/menu_active_div.jpg") no-repeat right;
     color: #fff;
     text-shadow: none;
 }
 
 #content img {
-    border:3px solid #fff;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    border: 3px solid #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     display: block;
     padding: 0;
     margin: 13px 20px 15px 0;
@@ -336,8 +340,8 @@ a:hover {
 }
 
 .breadcrumbs {
-    border-top:1px solid #e6e6e6;
-    border-bottom:1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
     padding: 24px 0;
 }
 
@@ -354,10 +358,10 @@ a:hover {
     background: #fff;
     padding: 24px 4px 13px 13px;
     left: -13px;
-    top:-13px;
+    top: -13px;
     min-width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     z-index: 10;
     display: none;
 }
@@ -397,11 +401,11 @@ a:hover {
 }
 
 .breadcrumbs li:hover a span {
-    border:none;
+    border: none;
 }
 
 .breadcrumbs a:hover span {
-    border:none;
+    border: none;
 }
 
 .desk-list {
@@ -417,7 +421,7 @@ a:hover {
 .desk-list h2 a i {
     position: absolute;
     width: 43px;
-    top:0;
+    top: 0;
     left: 0;
     height: 43px;
     background: url("../i/ico_sprite.png") no-repeat;
@@ -432,8 +436,8 @@ a:hover {
 }
 
 .desk-list h2 a i.structure {
-     background-position: left -43px;
- }
+    background-position: left -43px;
+}
 
 .desk-list h2 a i.method {
     background-position: left -86px;
@@ -441,7 +445,7 @@ a:hover {
 
 .desk-list h2 a i.results {
     height: 53px;
-    top:-5px;
+    top: -5px;
     background-position: left -129px;
 }
 
@@ -460,6 +464,7 @@ a:hover {
 .desk-list a {
     border-bottom: 1px dashed #2b80c5;
 }
+
 .desk-list a:hover {
     border-bottom: 1px dashed #679dd1;
 }
@@ -476,7 +481,7 @@ a:hover {
     border-radius: 5px;
     padding: 20px 23px 25px;
     line-height: 30px;
-    border:1px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
     color: #1d1d1d;
     font-size: 14px;
 }
@@ -512,8 +517,8 @@ a:hover {
 }
 
 .comments {
-    border-top:1px solid #e6e6e6;
-    border-bottom:1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
     padding: 28px 0 20px;
 }
 
@@ -525,24 +530,24 @@ a:hover {
 
 .comments .form-comment .inner {
     border-radius: 4px;
-    border:1px solid #d9dde1;
+    border: 1px solid #d9dde1;
     border-radius: 4px;
     background: #fff;
     overflow: hidden;
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .comments .form-comment .head {
     padding: 0 15px;
     background: url("../i/headers-bg.jpg") repeat-x top;
     height: 45px;
-    border-bottom:1px solid #d9dde1;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #d9dde1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 .comments .form-comment .head h4 {
-   padding-top: 15px;
+    padding-top: 15px;
 }
 
 .comments .form-comment .social-auth {
@@ -619,7 +624,7 @@ a:hover {
 
 input[type=text], textarea {
     border-radius: 2px;
-    border:1px solid #babec0;
+    border: 1px solid #babec0;
     display: block;
     margin-bottom: 18px;
     height: 34px;
@@ -627,7 +632,7 @@ input[type=text], textarea {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #404040;
     font-size: 13px;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 4px #eef1f3;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 4px #eef1f3;
 }
 
 textarea {
@@ -638,14 +643,14 @@ textarea {
 }
 
 input[type=text]:focus, textarea:focus {
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 4px #d8e0e4;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 4px #d8e0e4;
     color: #404040;
 }
 
 input.error, textarea.error {
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 4px #feb5c3;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 4px #feb5c3;
     color: #d6507d;
-    border:1px solid #bdc1c4;
+    border: 1px solid #bdc1c4;
 }
 
 #content .form input[type=text] {
@@ -662,9 +667,9 @@ a.send, a.quest {
     text-transform: uppercase;
     color: #fff;
     font-size: 11px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     background: url("../i/bg-but.png") repeat-x 0 -1px;
-    border:1px solid #026eb5;
+    border: 1px solid #026eb5;
     height: 25px;
     padding: 4px 15px 0;
     text-decoration: none;
@@ -690,9 +695,8 @@ a.send:active {
     height: 16px;
 }
 
-
 .comments .comment {
-    border:1px solid #dcdcdc;
+    border: 1px solid #dcdcdc;
     border-radius: 5px;
     margin-top: 30px;
     padding: 12px;
@@ -705,7 +709,7 @@ a.send:active {
     width: 23px;
     height: 14px;
     left: 22px;
-    top:-15px;
+    top: -15px;
     border-bottom: 1px solid #f8fcff;
 }
 
@@ -743,7 +747,6 @@ a.send:active {
     background: url("../i/ico_time.png") no-repeat left 0;
 }
 
-
 a.quest {
     background: url("../i/bg-but.png") repeat-x 0 -1px;
     height: 23px;
@@ -777,8 +780,8 @@ a.quest:active {
 }
 
 .padder.bord {
-    border-top:1px solid #e6e6e6;
-    border-bottom:1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .col-30 {
@@ -807,7 +810,7 @@ label.checkbox.active, label.radio.active {
 
 label input {
     position: absolute;
-    top:-10000px;
+    top: -10000px;
 }
 
 .preview {
@@ -824,7 +827,7 @@ label input {
     width: 77px;
     height: 77px;
     background: url("../i/play.png") no-repeat;
-    top:45px;
+    top: 45px;
     left: 70px;
     opacity: 0.7;
 }
@@ -987,7 +990,7 @@ label input {
     z-index: 11;
     border-radius: 0 4px 4px 4px;
     margin-left: 5px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .file {
@@ -1052,10 +1055,10 @@ label input {
 .pager li.active {
     background: #fff;
     border-radius: 28px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.pager li.active a{
+.pager li.active a {
     text-decoration: none;
 }
 
@@ -1071,7 +1074,7 @@ label input {
     border-radius: 4px;
     background: #fff url("../i/table_bg.jpg") repeat-x top;
     padding: 3px 10px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .table table tbody {
@@ -1080,7 +1083,7 @@ label input {
 
 .table table th {
     height: 29px;
-    padding: 13px 10px 0 10px ;
+    padding: 13px 10px 0 10px;
     min-width: 90px;
     border-right: 1px solid #e6e6e6;
 }
@@ -1113,8 +1116,8 @@ ul.list {
 }
 
 ul.list ul {
-     margin-left: 15px;
- }
+    margin-left: 15px;
+}
 
 ul.list li {
     background: url("../i/li-out.jpg") no-repeat left 8px;
@@ -1280,26 +1283,25 @@ ol li ol {
     background-position: -188px bottom;
 }
 
-
 #footer a.itech {
     position: absolute;
     right: 18px;
     background: url("../i/itech.jpg") no-repeat;
     width: 43px;
     height: 97px;
-    top:3px;
+    top: 3px;
 }
 
 #social {
     background: #f0f0f0;
-    box-shadow: -1px 0 2px rgba(0,0,0,0.3);
+    box-shadow: -1px 0 2px rgba(0, 0, 0, 0.3);
     width: 32px;
     overflow: hidden;
     border-left: 1px solid #fff;
     position: absolute;
     right: 0;
     padding: 5px 0;
-    top:245px;
+    top: 245px;
     z-index: 100;
 }
 
@@ -1408,7 +1410,7 @@ ol li ol {
     float: right;
     width: 447px;
     height: 303px;
-    border:1px solid #bdbdbd;
+    border: 1px solid #bdbdbd;
     margin-bottom: 10px;
 }
 
@@ -1437,7 +1439,7 @@ ol li ol {
 }
 
 .comments.feedback {
-    border-top:0;
+    border-top: 0;
     padding-top: 15px;
 }
 
@@ -1468,3 +1470,346 @@ ol li ol {
 .contact .breadcrumbs span {
     color: #000;
 }
+
+.shop_type {
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+.shop_type>ul>li {
+    float: left;
+    margin-right: 54px;
+    position: relative;
+}
+
+.shop_type>ul>li>a {
+    border-bottom: 1px dashed #2b80c5;
+    text-decoration: none;
+}
+
+.lists ul {
+    float: left;
+    margin: 0 31px 0;
+    width: 114px;
+
+}
+
+.lists ul li a {
+    line-height: 22px;
+    display: block;
+}
+
+.lists ul li {
+    margin-bottom: 10px;
+}
+
+.lists ul li.big {
+    margin-bottom: 0;
+}
+
+.lists ul.last {
+    margin-right: 0;
+}
+
+.popup {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: -15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 3px #e0e0e0;
+    overflow: hidden;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 100;
+    display: none;
+
+}
+
+.popup .header {
+    background: url("../i/pop_up_header_bg.jpg") repeat-x;
+    height: 28px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+    border-bottom: 1px solid #bfc3c5;
+
+}
+
+.popup .change {
+    padding: 15px;
+    background: #fff;
+    overflow: auto;
+}
+
+.popup .change ul {
+    float: left;
+
+}
+
+.popup .change ul.first {
+    width: 131px;
+    margin-right: 15px;
+}
+
+.popup .change ul.last {
+    width: 113px;
+    float: left;
+}
+
+.popup .change li a {
+    font-size: 13px;
+}
+
+.shop_type>ul>li:hover .popup {
+    display: block;
+    cursor: pointer;
+}
+
+.where-buy .comments.feedback {
+    border-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 11px;
+
+}
+
+.where-buy .comments.feedback.last {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 22px;
+}
+
+.where-buy .comments .form-comment .inner {
+    overflow: visible;
+}
+
+.intro {
+    background: #004377 url("../i/intro_body_bg.jpg") no-repeat center top;
+}
+
+.container_intro {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.container_intro img {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+}
+
+.ico_menu {
+    position: absolute;
+    top: 43px;
+    left: 227px;
+}
+
+.ico_menu a {
+    background-image: url("../i/ico_vivax_sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 232px;
+
+}
+
+.ico_menu .first {
+    background-position: left top;
+    width: 190px;
+
+}
+
+.ico_menu .sec {
+    background-position: -190px top;
+    width: 180px;
+
+}
+
+.ico_menu .last {
+    background-position: right top;
+    width: 199px;
+}
+
+.new {
+    margin-bottom: 35px;
+
+}
+
+#content .new img {
+    margin: 0;
+
+}
+
+.new .info {
+    margin-left: 245px;
+}
+
+.date_time span {
+    display: block;
+    float: left;
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-right: 20px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.data_picker {
+    position: relative;
+    z-index: 1000;
+    left: 15px;
+    margin-top: 100px;
+    margin-bottom: -132px;
+
+}
+
+.data_picker label, .data_picker input {
+    float: left;
+    display: block;
+    margin-right: 15px;
+    position: relative;
+    z-index: 1000;
+
+}
+
+.data_picker label {
+    padding-top: 7px;
+}
+
+.data_picker .well {
+    position: relative;
+}
+
+.data_picker input {
+    background: #fff url("../i/select_arr.jpg") no-repeat right;
+    height: 33px;
+    cursor: pointer;
+    position: relative;
+    color: #aeaeae;
+
+}
+
+.news {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 30px;
+    margin-top: 75px;
+
+}
+
+.datepicker {
+    position: absolute;
+    background: #fff;
+    width: 230px;
+    margin-left: -42px;
+    margin-top: 5px;
+    box-shadow: 0 0 4px #ccc;
+    z-index: 10000;
+    padding: 0;
+
+}
+
+.datepicker tr {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.datepicker tr:last-child, .datepicker thead tr {
+    border: 0;
+}
+
+.datepicker .dow {
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+
+}
+
+.datepicker .dow:last-child {
+    border-right: 0;
+}
+
+.datepicker tbody {
+
+}
+
+.datepicker:before, .datepicker:after {
+    display: none;
+}
+
+.datepicker thead tr th {
+    border-radius: 0;
+    height: 34px;
+
+}
+
+.datepicker .datepicker-days, .datepicker .datepicker-month, .datepicker .datepicker-years {
+    background: url("../i/pop_up_header_bg.jpg") repeat-x top;
+    padding: 0 10px 10px;
+
+}
+
+.datepicker td {
+    border-right: 1px solid #e1e1e1;
+    border-radius: 0;
+    padding: 2px 0;
+}
+
+.datepicker td:last-child {
+    border: 0;
+}
+
+.datepicker thead th {
+    height: 44px;
+    padding-bottom: 10px;
+
+}
+
+.datepicker thead .dow {
+    padding-bottom: 0;
+    height: auto;
+}
+
+.datepicker thead tr:first-child th:hover {
+    background: none;
+    color: #2b80c5;
+}
+
+.datepicker td.active:active, .datepicker td.active:hover:active, .datepicker td.active.active, .datepicker td.active:hover.active {
+    background-color: #cadff0;
+}
+
+.datepicker td[colspan="7"] {
+    padding-left: 10px;
+}
+
+.datepicker td span.year {
+    width: 46px;
+}
+
+.datepicker {
+    display: none;
+}
+
+
+
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) {
+    .datepicker thead th {
+        padding-top: 8px;
+        padding-bottom: 12px;
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,20 +11,26 @@
     <script type="text/javascript" src="media/js/main.js"></script>
     <script type="text/javascript" src="media/js/cufon-yui.js"></script>
     <script type="text/javascript" src="media/js/myriad-pro.cufonfonts.js"></script>
-    <meta name = "viewport" content = "width = 1040">
+    <meta name="viewport" content="width = 1040">
     <script type="text/javascript">
         Cufon.replace('.regular, h1', { fontFamily:'MyriadRegular', hover:true });
         Cufon.replace('.bold_italic', { fontFamily:'MyriadBoldItalic', hover:true });
         Cufon.replace('.bold, h2, h4,#back, .menu a', { fontFamily:'MyriadBold', hover:true });
         Cufon.replace('.italic', { fontFamily:'MyriadItalic', hover:true });
     </script>
+    <!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" media="all" href="media/css/ie.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" media="all" href="media/css/ie7.css"/>
+    <![endif]-->
 
 </head>
 <body data-0="background-position:0px 0px;" data-100000="background-position:0px -3000px;">
 <div id="skrollr-body">
 <div id="bg2" data-0="background-position:100% 350px;" data-100000="background-position:100% -30000px;">
 <div id="buble1" data-0="background-position:0px 0px;" data-100000="background-position:0px -200000px;">
-<div id="top_bg"></div>
+
 
 <div id="container">
 
@@ -45,6 +51,7 @@
 </div>
 
 <div id="right">
+<div id="top_bg"></div>
 <div id="top_circles">
     <a class="circle item1" href="#"></a>
     <a class="circle item2" href="#"></a>
@@ -66,14 +73,12 @@
     <li><a href="#">Продукция</a></li>
     <li><a href="#">Специалистам</a></li>
     <li><a href="#">Вопрос-ответ</a></li>
-    <li><a href="#">Где купить</a></li>
-    <li class="last active"><a href="#">Контакты</a></li>
+    <li class="active"><a href="#">Где купить</a></li>
+    <li class="last"><a href="#">Контакты</a></li>
 </ul>
 
-<div id="content">
+<div id="content" class="where-buy">
 <h1>Где купить</h1>
-
-
 
 
 <div class="comments feedback">
@@ -107,7 +112,7 @@
 
                         <h5>Магазин спортивного питания</h5>
                         <span>ул. Снайперская, д.9 "Б",<br> магазин "СПОРТТОВАРЫ" (цокольный этаж)</span><br>
-                        Teл.:  <span>+7 (495) 796-52-11</span><br>
+                        Teл.: <span>+7 (495) 796-52-11</span><br>
                     </div>
                     <div class="map"><img src="media/temp/map.jpg" alt=""></div>
                 </div>
@@ -117,9 +122,159 @@
     </div>
 
 </div>
+<div class="comments feedback last">
+    <div class="form-comment">
+        <div class="inner">
+            <div class="head">
+                <h4>Интернет-магазины</h4>
+            </div>
+            <div class="form">
+                <div class="shop_type">
+                    <ul>
+                        <li><a href="#">Все магазины</a>
+
+                            <div class="popup">
+                                <div class="header bold"> Все магазины</div>
+                                <div class="change">
+                                    <ul class="first">
+                                        <li><a href="#">Москва</a></li>
+                                        <li><a href="#">Московская область</a></li>
+                                        <li><a href="#">Владивосток</a></li>
+                                        <li><a href="#">Владикавказ</a></li>
+                                        <li><a href="#">Грозный</a></li>
+                                        <li><a href="#">Ижевск</a></li>
+                                        <li><a href="#">Казань</a></li>
+                                        <li><a href="#">Ульяновск</a></li>
+
+                                    </ul>
+
+                                    <ul class="last">
+                                        <li><a href="#">Липецк</a></li>
+                                        <li><a href="#">Новосибирск</a></li>
+                                        <li><a href="#">Калининград</a></li>
+                                        <li><a href="#">Самара</a></li>
+                                        <li><a href="#">Саратов</a></li>
+                                        <li><a href="#">Тула</a></li>
+                                        <li><a href="#">Санкт-Петербург</a></li>
+                                        <li><a href="#">Опять Ульяновск</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li><a href="#">С доставкой</a>
+
+                            <div class="popup">
+                                <div class="header bold"> С доставкой</div>
+                                <div class="change">
+                                    <ul class="first">
+                                        <li><a href="#">Москва</a></li>
+                                        <li><a href="#">Московская область</a></li>
+                                        <li><a href="#">Владивосток</a></li>
+                                        <li><a href="#">Владикавказ</a></li>
+                                        <li><a href="#">Грозный</a></li>
+                                        <li><a href="#">Ижевск</a></li>
+                                        <li><a href="#">Казань</a></li>
+                                        <li><a href="#">Ульяновск</a></li>
+
+                                    </ul>
+
+                                    <ul class="last">
+                                        <li><a href="#">Липецк</a></li>
+                                        <li><a href="#">Новосибирск</a></li>
+                                        <li><a href="#">Калининград</a></li>
+                                        <li><a href="#">Самара</a></li>
+                                        <li><a href="#">Саратов</a></li>
+                                        <li><a href="#">Тула</a></li>
+                                        <li><a href="#">Санкт-Петербург</a></li>
+                                        <li><a href="#">Опять Ульяновск</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li><a href="#">Самовывоз из Москвы</a>
+
+                            <div class="popup">
+                                <div class="header bold">Самовывоз из Москвы</div>
+                                <div class="change">
+                                    <ul class="first">
+                                        <li><a href="#">Москва</a></li>
+                                        <li><a href="#">Московская область</a></li>
+                                        <li><a href="#">Владивосток</a></li>
+                                        <li><a href="#">Владикавказ</a></li>
+                                        <li><a href="#">Грозный</a></li>
+                                        <li><a href="#">Ижевск</a></li>
+                                        <li><a href="#">Казань</a></li>
+                                        <li><a href="#">Ульяновск</a></li>
+
+                                    </ul>
+
+                                    <ul class="last">
+                                        <li><a href="#">Липецк</a></li>
+                                        <li><a href="#">Новосибирск</a></li>
+                                        <li><a href="#">Калининград</a></li>
+                                        <li><a href="#">Самара</a></li>
+                                        <li><a href="#">Саратов</a></li>
+                                        <li><a href="#">Тула</a></li>
+                                        <li><a href="#">Санкт-Петербург</a></li>
+                                        <li><a href="#">Опять Ульяновск</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+
+                <div class="lists">
+                    <ul>
+                        <li><a href="#">5LB.ru</a></li>
+                        <li><a href="#">doktorslon.ru</a></li>
+                        <li><a href="#">«Страна Улыбок»</a></li>
+                        <li><a href="#">neven.ru</a></li>
+                        <li><a href="#">Profi-Shik</a></li>
+                        <li><a href="#">Клуб хоккея</a></li>
+                        <li><a href="#">Docsport</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">5LB.ru</a></li>
+                        <li><a href="#">doktorslon.ru</a></li>
+                        <li><a href="#">«Страна Улыбок»</a></li>
+                        <li><a href="#">neven.ru</a></li>
+                        <li><a href="#">Profi-Shik</a></li>
+                        <li><a href="#">Клуб хоккея</a></li>
+                        <li><a href="#">Docsport</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="big"><a href="#">"Первый стоматологический бутик"</a></li>
+                        <li><br></li>
+                        <li><a href="#">"Дом Линз"</a></li>
+                        <li><a href="#">Магия Красоты</a></li>
+                        <li><a href="#">Дента плюс</a></li>
+                        <li><a href="#">ФИЗИКАТЕЛА</a></li>
+                    </ul>
+
+                    <ul class="last">
+                        <li><a href="#">5LB.ru</a></li>
+                        <li><a href="#">doktorslon.ru</a></li>
+                        <li><a href="#">«Страна Улыбок»</a></li>
+                        <li><a href="#">neven.ru</a></li>
+                        <li><a href="#">Profi-Shik</a></li>
+                        <li><a href="#">Клуб хоккея</a></li>
+                        <li><a href="#">Docsport</a></li>
+                    </ul>
 
 
+                    <div class="clr"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</div>
 
 
 <div id="back"><a href="#">Вернуться к Vivax Dent</a></div>
@@ -127,29 +282,30 @@
 </div>
 
 </div>
+<div class="clr"></div>
 
 </div>
 
 </div>
 </div>
 <div id="footer">
-<div class="container">
-    Корпорация «Академия Научной Красоты»<br>
-    129090, Москва, 2-й Троицкий, дом 3<br>
-    Teл.: +7 (495) 781-99-11<br>
-    E-mail: <a href="#">info@vivax.ru</a>
-    <div class="social">
-        <a class="tw" href="#"></a>
-        <a class="fb" href="#"></a>
-        <a class="vk" href="#"></a>
-        <a class="ok" href="#"></a>
-        <a class="gp" href="#"></a>
-        <a class="yt" href="#"></a>
-        <a class="ru" href="#"></a>
-    </div>
-    <a class="itech" href="#"></a>
-</div>
+    <div class="container">
+        Корпорация «Академия Научной Красоты»<br>
+        129090, Москва, 2-й Троицкий, дом 3<br>
+        Teл.: +7 (495) 781-99-11<br>
+        E-mail: <a href="#">info@vivax.ru</a>
 
+        <div class="social">
+            <a class="tw" href="#"></a>
+            <a class="fb" href="#"></a>
+            <a class="vk" href="#"></a>
+            <a class="ok" href="#"></a>
+            <a class="gp" href="#"></a>
+            <a class="yt" href="#"></a>
+            <a class="ru" href="#"></a>
+        </div>
+        <a class="itech" href="#"></a>
+    </div>
 
 
 </div>
