@@ -14,7 +14,39 @@ $(function () {
         }
     });
 
+    $('.tabs .item').click(function () {
+        if (!$(this).hasClass('active')) {
+            $('.tabs .item').removeClass('active');
+            $(this).addClass('active');
+            $('.vkladishi').hide(0);
+            $($(this).attr('rel')).show(0);
+        }
+        return false;
+    });
 
+
+    $('.desk-list li h2').click(function () {
+        $(this).parent().find('.quote').slideToggle(200);
+        return false;
+
+    });
+
+    $('.checkbox input').change(function () {
+        $(this).parent().toggleClass('active');
+    });
+
+
+    $('.radio').click(function () {
+        if (!$(this).is('active')) {
+            $('.radio[rel=' + $(this).attr('rel') + ']').removeClass('active');
+            $(this).addClass('active');
+        }
+
+    });
 
 
 });
+
+
+
+

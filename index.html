@@ -7,7 +7,7 @@
           type='text/css'>
     <link type="text/css" rel="stylesheet" media="all" href="media/css/reset.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="media/css/style.css"/>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="media/js/main.js"></script>
     <script type="text/javascript" src="media/js/cufon-yui.js"></script>
     <script type="text/javascript" src="media/js/myriad-pro.cufonfonts.js"></script>
@@ -19,11 +19,11 @@
         Cufon.replace('.italic', { fontFamily:'MyriadItalic', hover:true });
     </script>
     <!--[if lt IE 9]>
-        <link type="text/css" rel="stylesheet" media="all" href="media/css/ie.css"/>
-        <![endif]-->
+    <link type="text/css" rel="stylesheet" media="all" href="media/css/ie.css"/>
+    <![endif]-->
     <!--[if IE 7]>
-     <link type="text/css" rel="stylesheet" media="all" href="media/css/ie7.css"/>
-     <![endif]-->
+    <link type="text/css" rel="stylesheet" media="all" href="media/css/ie7.css"/>
+    <![endif]-->
 </head>
 <body data-0="background-position:0px 0px;" data-100000="background-position:0px -3000px;">
 <div id="skrollr-body">
@@ -35,7 +35,6 @@
 
 <div id="left-bar">
     <a class="logo" href="/"><img src="media/i/logo.png" alt=""></a>
-
     <ul class="menu">
         <li><a href="#">Ценности</a></li>
         <li><a href="#">Научные руководители</a></li>
@@ -44,7 +43,6 @@
         <li><a href="#">Фотоархив</a></li>
         <li class="last"><a href="#">Видеоархив</a></li>
     </ul>
-
     <div class="banner">
         <div class="top"></div>
         <div class="middle">
@@ -154,9 +152,50 @@
                 <div class="author">Иванов Иван <span class="date">22.12.2011</span> 19:04</div>
             </div>
         </li>
-        <li><h2><a href="#"><i class="structure"></i>Состав</a></h2></li>
-        <li><h2 class="vivax"><a href="#"><i class="method"></i>Способ применения</a></h2></li>
+        <li><h2><a href="#"><i class="structure"></i>Состав</a></h2>
+
+            <div class="quote">
+                <div class="text italic">
+                    Пища должна быть простой. Спать хорошо семь-восемь часов, если столько
+                    хочется, спать при открытых окнах. Вставать рано, работать сурово, очень
+                    сурово. Это не повредит никому, потому что это создаст бодрость духа, а дух
+                    в свою очередь, позаботится об участи тела. Не сидеть допоздна. В конце
+                    концов, что такого уж ценного в светской жизни, чтобы вы пренебрегли
+                    подушкой для того, чтобы бодрствовать до раннего утра!
+                    <div class="arr"></div>
+                </div>
+                <div class="author">Иванов Иван <span class="date">22.12.2011</span> 19:04</div>
+            </div>
+        </li>
+        <li><h2 class="vivax"><a href="#"><i class="method"></i>Способ применения</a></h2>
+
+            <div class="quote">
+                <div class="text italic">
+                    Пища должна быть простой. Спать хорошо семь-восемь часов, если столько
+                    хочется, спать при открытых окнах. Вставать рано, работать сурово, очень
+                    сурово. Это не повредит никому, потому что это создаст бодрость духа, а дух
+                    в свою очередь, позаботится об участи тела. Не сидеть допоздна. В конце
+                    концов, что такого уж ценного в светской жизни, чтобы вы пренебрегли
+                    подушкой для того, чтобы бодрствовать до раннего утра!
+                    <div class="arr"></div>
+                </div>
+                <div class="author">Иванов Иван <span class="date">22.12.2011</span> 19:04</div>
+            </div>
+        </li>
         <li><h2><a href="#"><i class="results"></i>Результаты клинических испытаний</a></h2>
+
+            <div class="quote">
+                <div class="text italic">
+                    Пища должна быть простой. Спать хорошо семь-восемь часов, если столько
+                    хочется, спать при открытых окнах. Вставать рано, работать сурово, очень
+                    сурово. Это не повредит никому, потому что это создаст бодрость духа, а дух
+                    в свою очередь, позаботится об участи тела. Не сидеть допоздна. В конце
+                    концов, что такого уж ценного в светской жизни, чтобы вы пренебрегли
+                    подушкой для того, чтобы бодрствовать до раннего утра!
+                    <div class="arr"></div>
+                </div>
+                <div class="author">Иванов Иван <span class="date">22.12.2011</span> 19:04</div>
+            </div>
         </li>
     </ul>
 </div>
@@ -280,60 +319,129 @@
 <div class="padder">
     <h3>Вкладки</h3>
 
+
     <div class="tabs">
         <div class="inset">
-            <div class="item first active">
+            <div rel="#rel1" class="item first active">
                 <span></span>
                 <h4>Открытая вкладка</h4>
                 <i></i>
             </div>
-            <div class="item second">
+            <div rel="#rel2" class="item second">
                 <span></span>
                 <h4>Выделенная вкладка</h4>
                 <i></i>
             </div>
-            <div class="item third">
+            <div rel="#rel3" class="item third">
                 <span></span>
                 <h4>Грусная вкладка =(</h4>
                 <i></i>
             </div>
         </div>
-        <div class="tab-area">
-            <p>А тут прячутся иконки для скачивания файлов:</p>
 
-            <div class="file doc">
-                <a class="name" href="#">Скачать описание</a>
-                <h5>Word</h5>
-                <span>1.42 Мбайт</span>
+        <div class="tab-area">
+            <div id="rel1" class="vkladishi" style="display: block;">
+                <p>А тут прячутся иконки для скачивания файлов:</p>
+
+                <div class="file doc">
+                    <a class="name" href="#">Скачать описание</a>
+                    <h5>Word</h5>
+                    <span>1.42 Мбайт</span>
+                </div>
+                <div class="file xls">
+                    <a class="name" href="#">Скачать прайс</a>
+                    <h5>Excel</h5>
+                    <span>456 Кбайт</span>
+                </div>
+                <div class="file ppt">
+                    <a class="name" href="#">Скачать презентацию</a>
+                    <h5>PowerPoint</h5>
+                    <span>245 Кбайт</span>
+                </div>
+                <div class="clr"></div>
+                <div class="file pdf">
+                    <a class="name" href="#">Скачать прайс</a>
+                    <h5>9 Мбайт</h5>
+                    <span>1.42 Мбайт</span>
+                </div>
+                <div class="file zip">
+                    <a class="name" href="#">Скачать вирусов</a>
+                    <h5>Архив</h5>
+                    <span>14 Мбайт</span>
+                </div>
+                <div class="file unkown">
+                    <a class="name" href="#">Скачать что-то</a>
+                    <h5>в чём-то</h5>
+                    <span>66 Байт</span>
+                </div>
+                <div class="clr"></div>
             </div>
-            <div class="file xls">
-                <a class="name" href="#">Скачать прайс</a>
-                <h5>Excel</h5>
-                <span>456 Кбайт</span>
+            <div id="rel2" class="vkladishi">
+
+                <p>А тут прячутся иконки для скачивания файлов:</p>
+
+                <div class="file doc">
+                    <a class="name" href="#">Скачать описание</a>
+                    <h5>Word</h5>
+                    <span>1.42 Мбайт</span>
+                </div>
+                <div class="file xls">
+                    <a class="name" href="#">Скачать прайс</a>
+                    <h5>Excel</h5>
+                    <span>456 Кбайт</span>
+                </div>
+                <div class="file ppt">
+                    <a class="name" href="#">Скачать презентацию</a>
+                    <h5>PowerPoint</h5>
+                    <span>245 Кбайт</span>
+                </div>
+                <div class="clr"></div>
+                <div class="file pdf">
+                    <a class="name" href="#">Скачать прайс</a>
+                    <h5>9 Мбайт</h5>
+                    <span>1.42 Мбайт</span>
+                </div>
+                <div class="file zip">
+                    <a class="name" href="#">Скачать вирусов</a>
+                    <h5>Архив</h5>
+                    <span>14 Мбайт</span>
+                </div>
+                <div class="clr"></div>
+
+
             </div>
-            <div class="file ppt">
-                <a class="name" href="#">Скачать презентацию</a>
-                <h5>PowerPoint</h5>
-                <span>245 Кбайт</span>
+            <div id="rel3" class="vkladishi">
+
+                <p>А тут прячутся иконки для скачивания файлов:</p>
+
+                <div class="file doc">
+                    <a class="name" href="#">Скачать описание</a>
+                    <h5>Word</h5>
+                    <span>1.42 Мбайт</span>
+                </div>
+                <div class="file xls">
+                    <a class="name" href="#">Скачать прайс</a>
+                    <h5>Excel</h5>
+                    <span>456 Кбайт</span>
+                </div>
+                <div class="file ppt">
+                    <a class="name" href="#">Скачать презентацию</a>
+                    <h5>PowerPoint</h5>
+                    <span>245 Кбайт</span>
+                </div>
+                <div class="clr"></div>
+                <div class="file pdf">
+                    <a class="name" href="#">Скачать прайс</a>
+                    <h5>9 Мбайт</h5>
+                    <span>1.42 Мбайт</span>
+                </div>
+                <div class="clr"></div>
+
+
             </div>
-            <div class="clr"></div>
-            <div class="file pdf">
-                <a class="name" href="#">Скачать прайс</a>
-                <h5>9 Мбайт</h5>
-                <span>1.42 Мбайт</span>
-            </div>
-            <div class="file zip">
-                <a class="name" href="#">Скачать вирусов</a>
-                <h5>Архив</h5>
-                <span>14 Мбайт</span>
-            </div>
-            <div class="file unkown">
-                <a class="name" href="#">Скачать что-то</a>
-                <h5>в чём-то</h5>
-                <span>66 Байт</span>
-            </div>
-            <div class="clr"></div>
         </div>
+
+
     </div>
 </div>
 <div class="padder bord">

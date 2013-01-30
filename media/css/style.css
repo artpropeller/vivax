@@ -1791,6 +1791,15 @@ ol li ol {
 }
 
 
+.vkladishi{
+    display: none;
+}
+
+.quote{
+    display: none;
+}
+
+
 
 @media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) {
     .datepicker thead th {
