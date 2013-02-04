@@ -634,8 +634,6 @@
             //Add skrollr mobile on mobile devices.
             var lastScrollTop = 0;
             $(window).bind('scrollstart', function () {
-//    console.log('start');
-//    alert('start');
                 var st = $(this).scrollTop();
                 if (st > lastScrollTop) {
                     $('#buble1').animate({backgroundPositionY:'-=460px'}, 1530);
