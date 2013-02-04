@@ -633,6 +633,9 @@
             //Add skrollr mobile on mobile devices.
             document.write('<script type="text/javascript" src="media/js/jquery.mobile-1.2.0.js"><\/script>');
             $.event.special.swipe.verticalDistanceThreshold(1000);
+            $(document).bind('scrollstart', function(){
+                alert(1);
+            });
         }
         else {
             skrollr.init({
