@@ -1609,19 +1609,38 @@ ol li ol {
     left: 227px;
 }
 
-.ico_menu a {
+.ico_menu span {
     background-image: url("../i/ico_vivax_sprite.png");
     background-repeat: no-repeat;
     display: block;
     float: left;
     height: 232px;
+    position: relative;
 
+}
+
+.ico_menu a {
+  display: block;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 48px;
+    left: 32px;
 }
 
 .ico_menu .first {
     background-position: left top;
     width: 190px;
 
+
+}
+
+.ico_menu .sec a {
+    left: 20px;
+}
+
+.ico_menu .last a {
+    left: 20px;
 }
 
 .ico_menu .sec {
