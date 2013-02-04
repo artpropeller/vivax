@@ -1820,6 +1820,15 @@ ol li ol {
 
 }
 
+.table .sort {
+    padding-right: 15px;
+    background: url("../i/art-sort.png") no-repeat right 7px;
+}
+
+.table .sort.asc {
+    background: url("../i/art-sort.png") no-repeat right -45px;
+}
+
 
 
 
