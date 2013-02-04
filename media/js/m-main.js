@@ -18,7 +18,7 @@ $(document).bind('pageinit', function () {
         }
     });
 
-    $('.tabs .item').vclick(function () {
+    $('.tabs .item').bind('touchstart mousedown',function () {
         if (!$(this).hasClass('active')) {
             $('.tabs .item').removeClass('active');
             $(this).addClass('active');
@@ -29,7 +29,7 @@ $(document).bind('pageinit', function () {
     });
 
 
-    $('.desk-list li h2').vclick(function () {
+    $('.desk-list li h2').bind('touchstart mousedown',function () {
         $(this).parent().find('.quote').slideToggle(200);
         return false;
 
@@ -40,7 +40,7 @@ $(document).bind('pageinit', function () {
     });
 
 
-    $('.radio').click(function () {
+    $('.radio').bind('touchstart mousedown',function () {
         if (!$(this).is('active')) {
             $('.radio[rel=' + $(this).attr('rel') + ']').removeClass('active');
             $(this).addClass('active');
