@@ -1,5 +1,5 @@
 var lastScrollTop = 0;
-$(window).bind('scroll', function () {
+$(window).bind('scrollstart', function () {
 //    console.log('start');
 //    alert('start');
     var st = $(this).scrollTop();
