@@ -89,18 +89,18 @@
                 </ul>
                 <div class="data_picker">
                     <div class="form_date">
-                        <div data-date="12-02-2012" data-date-format="dd-mm-yyyy" class="items well1 fll">
+                        <div  class="items well1 fll">
                             <label for="dp2">Показать новости с</label>
-                            <input id="dp2" type="text" value="01.12.2007">
+                            <input id="dp2" type="text" value="05.02.2013">
 
 
                         </div>
                         <div class="items well2 fll">
                             <label for="dp3">по</label>
-                            <input id="dp3" type="text" value="05.11.2010">
+                            <input id="dp3" type="text" value="01.03.2013">
                             <script>
                                 $(function () {
-                                    $('#dp3, #dp2').datepicker({weekStart:1, format:'dd.mm.yy'}).on('changeDate', function (ev) {
+                                    $('#dp3, #dp2').datepicker({weekStart:1, format:'dd.mm.yyyy'}).on('changeDate', function (ev) {
                                         Cufon.replace('.switch', { fontFamily:'MyriadBold', hover:true });
                                     });
                                     $('#dp3, #dp2').datepicker('hide');

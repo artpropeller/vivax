@@ -65,6 +65,7 @@ a:hover {
 
 #bg2 {
     background: url("../i/bg2.png") repeat-x 100% 0 fixed;
+    padding-bottom: 40px;
 }
 
 #buble1 {
@@ -1190,7 +1191,7 @@ ol li ol {
 
 #footer {
     background: #fff url("../i/footer.jpg") repeat-x top;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     text-align: center;
     color: #999999;
     font-size: 11px;
@@ -1806,8 +1807,11 @@ ol li ol {
     .datepicker thead th {
         padding-top: 8px;
         padding-bottom: 12px;
+    }
 
-
+    .table table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
 }
