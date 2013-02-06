@@ -1840,9 +1840,22 @@ ol li ol {
 
     .table table th {
         padding-top: 12px;
-        padding-bottom: 14px;
+        padding-bottom:16px;
     }
 
+ }
+
+@media (min-resolution: .001dpcm) {
+
+_:-o-prefocus, .datepicker thead th {
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+_:-o-prefocus, .table table th {
+    padding-top: 12px;
+    padding-bottom:16px;
+}
 }
 
 .table .sort {
